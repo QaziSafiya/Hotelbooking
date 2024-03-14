@@ -1,0 +1,30 @@
+@import './assets/styles/variable.scss';
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    @media only screen and (max-width:$bp-largest){
+       font-size: 50%;
+    }
+}
+body{
+background-color: $primary;
+font-weight: 600;
+line-height: 1.6;
+background-image: linear-gradient(to right bottom ,$primary-dark, $primary-light);
+background-size: cover;
+background-repeat: no-repeat;
+min-height: 100vh;
+font-family: "Prompt", sans-serif;
+}
